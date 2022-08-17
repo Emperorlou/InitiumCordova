@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "236957303251",
+    "firebase_url": "https://playinitium.firebaseio.com",
+    "project_id": "playinitium",
+    "storage_bucket": "playinitium.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236957303251:android:bbb58afd1ebd7408",
+        "android_client_info": {
+          "package_name": "com.playinitium"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236957303251-gmhg8fm200tjsl3vea1i3v1d66fb1kqo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.playinitium",
+            "certificate_hash": "1dbf1921b7393227d92158debb02113067c9aa7d"
+          }
+        },
+        {
+          "client_id": "236957303251-83rr9gcnddjfcgkm35a2o70rf2rvfq2d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQbvtdDlQxYScSsetoI0I2CNY_eo9GWRU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236957303251-83rr9gcnddjfcgkm35a2o70rf2rvfq2d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

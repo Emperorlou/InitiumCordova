@@ -1,0 +1,341 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+/*
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: none;
+  color:#FFFF00;
+}
+*/
+html, body {height:100%;width:100%;overflow:hidden;}
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#000000;
+}
+
+
+p
+{
+	color:#d8ab6a;	
+}
+
+.centering-container
+{
+	position:absolute;
+	left:50%;
+	top:50%;
+}
+
+.app
+{
+	overflow-x:hidden;
+	height:100%; 
+}    
+
+.anims
+{
+	position:relative;
+}
+
+.anim
+{
+	position:fixed;
+	opacity:0.6;
+	filter:brightness(4);
+}
+
+.fullscreen-container
+{
+	position:absolute;
+	height:100%;
+	width:100%;
+}
+
+.menu-panel-container
+{
+	position:relative;
+	height:100%;
+	
+	background-image:url('images/aera1.jpg');
+	background-position:right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	
+	align-items:center;
+	display:flex;
+}
+
+.menu-panel-back-button
+{
+	
+}
+
+.menu-panel
+{
+	position:relative;
+	text-align:center; 
+	width:50%;
+	z-index:1;
+	height:100%;
+}
+
+.menu-contents-container
+{
+	
+}
+
+.menu-contents
+{
+	position: relative;
+    margin-left: -100%;
+    margin-top: -50%;
+}
+
+.menu-panel p
+{
+	text-shadow: 1px 1px 2px #000;
+}
+
+.menu-button
+{
+	display:block;
+	width:100%;
+	margin:5px;
+}
+
+.button-quit
+{
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	margin:0px;
+	z-index:2;
+}
+
+.button-bottom-left
+{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	margin:0px;
+	z-index:2;
+}
+
+#initialize-status
+{
+	font-size:20px;
+}
+
+.loading-indicator
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 47;
+	background: url("images/loading2.gif") center no-repeat, rgb(14,11,6);
+	vertical-align: middle;
+	background-color:#0c0804;
+	background-size:266px 328px;
+	image-rendering:pixelated;
+}
+
+.loading-indicator h1
+{
+	position:fixed;
+	width:100%;
+	top: 50%;
+	text-align:center;
+	margin-top:-21px;
+	
+	vertical-align: middle;
+	text-shadow: 0px 0px 10px yellow;
+}		
+
+.landing-logo
+{
+	/*background-image:url('images/ui3/background1.jpg');*/
+	margin-top:0px;
+	margin-left:-100%;
+	padding:0px;
+}
+
+.landing-logo img
+{
+	max-width:80%;
+}
+
+
+.flex-container 
+{
+	height:100%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.flex-item:nth-child(1) 
+{
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+}
+
+.flex-item:nth-child(2) 
+{
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+ }		
+
+
+.main-textbox2 input[type=text], .main-textbox2 input[type=password], .main-textbox2 input[type=email]
+{
+	background-color:transparent;
+	border-style: solid;
+	border-width: 17px 19px 17px 16px;
+	-moz-border-image: url(images/ui3/input1-background.png) 17 19 17 16 stretch;
+	-webkit-border-image: url(images/ui3/input1-background.png) 17 19 17 16 stretch;
+	-o-border-image: url(images/ui3/input1-background.png) 17 19 17 16 stretch;
+	border-image: url(images/ui3/input1-background.png) 17 19 17 16 fill stretch;
+}
+
+.main-textbox2 input[type=text]:focus, .main-textbox2 input[type=password]:focus, .main-textbox2 input[type=email]:focus
+{
+	filter:brightness(1.5);
+	outline:none;
+}
+
+.onpage-error
+{
+	color: #FF3333;
+    font-size: 15px;
+    margin: 0px;
+    max-width: 50%;
+    margin-left: 25%;	
+}
+
+.onpage-message
+{
+    font-size: 15px;
+    margin: 0px;
+    max-width: 50%;
+    margin-left: 25%;	
+}
+
+#logged-in-email
+{
+	max-width: 70%;
+    text-align: left;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+@media (max-width:1000px)
+{
+	.menu-panel
+	{
+		width:100%;
+	}
+}
+
+@media (max-height:500px)
+{
+	.appbutton1
+	{
+	    height: auto;
+	    width: auto;
+	    max-height: 40px;
+	}
+	
+}

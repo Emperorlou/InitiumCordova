@@ -1,0 +1,40 @@
+{
+  "name": "com.example.hello",
+  "displayName": "HelloWorld",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^9.1.0",
+    "cordova-electron": "^1.1.1",
+    "cordova-plugin-inappbrowser": "^5.0.0",
+    "cordova-plugin-navigationbar": "github:cranberrygame/com.cranberrygame.phonegap.plugin.navigationbar",
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-navigationbar": {},
+      "cordova-plugin-googleplus": {
+        "WEB_APPLICATION_CLIENT_ID": "236957303251-83rr9gcnddjfcgkm35a2o70rf2rvfq2d.apps.googleusercontent.com",
+        "PLAY_SERVICES_VERSION": "15.0.1"
+      },
+      "cordova-plugin-inappbrowser": {}
+    },
+    "platforms": [
+      "electron",
+      "android"
+    ]
+  },
+  "dependencies": {
+    "cordova-plugin-googleplus": "8.5.2"
+  }
+}
